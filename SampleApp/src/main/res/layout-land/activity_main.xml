@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.appmogli.activitybus.sampleapp.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+
+    <fragment
+        android:id="@+id/activity_main_display_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:name="com.appmogli.activitybus.sampleapp.fragments.DisplayConsoleFragment"
+        tools:layout="@layout/fragment_display_console" />
+
+    <fragment
+        android:id="@+id/activity_main_color_chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:name="com.appmogli.activitybus.sampleapp.fragments.ColorChooserFragment"
+        tools:layout="@layout/fragment_color_chooser" />
+
+
+    <fragment
+        android:id="@+id/activity_main_size_chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:name="com.appmogli.activitybus.sampleapp.fragments.SizeChooserFragment"
+        tools:layout="@layout/fragment_size_chooser" />
+
+</LinearLayout>
